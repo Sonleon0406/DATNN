@@ -16,11 +16,11 @@
                             <div class="card-header bg-gradient-dark ">
                                 <div class="text-center">
                                     <h4 class="font-weight-bolder p-3 mb-0">
-                                        <span class="text-white">KhanhUD</span><span style="color: #D10024;">Mobile</span>
+                                        <span class="text-white">Vina</span><span style="color: #D10024;">cada</span>
                                     </h4>
                                 </div>
                             </div>
-                            <div class="card-body pb-0">                          
+                            <div class="card-body pb-0">
                                 <form action="{{route('loginAdmin.store')}}" method="post">
                                     {!! csrf_field() !!}
                                     <div class="mb-2">

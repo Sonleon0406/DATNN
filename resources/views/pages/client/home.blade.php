@@ -12,7 +12,7 @@
         <div class="carousel-inner">
             @foreach ($banners as $key => $banner)
                 <div class="carousel-item {{ $key == 0 ? 'active' : '' }}">
-                    <img src="{{ asset('images/' . $banner->image) }}" class="d-block w-100" alt="{{ $banner->title }}">
+                    <img src="{{ asset('images/' . $banner->image) }}" class="d-block w-100" style="height: 500px; object-fit: cover;" alt="{{ $banner->title }}">
                 </div>
             @endforeach
         </div>
@@ -29,9 +29,9 @@
     </div>
 
     <!-- Carousel cho sản phẩm giảm giá -->
-    <div class="bg-danger">
+    <div class="bg-danger ">
         <div class="container">
-            <h3 class="m-0 title py-3">SALE SẬP SÀN</h3>
+            <h3 class="m-0 title py-3 sale">SALE SẬP SÀN</h3>
             <div class="owl-carousel owl-theme">
                 @foreach ($discountedProducts as $product)
                     <div class="item">
